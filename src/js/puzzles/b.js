@@ -269,27 +269,16 @@ $.fn.extend({
         var pipeString = '<img class="{0}">';
         var size = getClass(this)[3].split('-')[1];
         var preset = gridPresets[size][random(gridPresets[size].length)];
-        var presetArray = formatPreset(preset);
         var string = ['<div class="d-flex flex-wrap">'];
 
-        var value, char, n;
+        var char;
         var pipeTypes;
         
-        for (var i = 0; i < presetArray.length; i++) {
-            value = presetArray[i];
-            if (value.length == 1) {
-                pipeTypes = gridPipeTypes[value];
-                string.push(pipeString.format(pipeTypes[random(pipeTypes.length)]));
+        for (var i = 0; i < preset.length; i++) {
+            char = preset.charAt(i);
+            pipeTypes = gridPipeTypes[char];
 
-            } else {
-                char = value[value.length - 1];
-                n = Number(value.substring(0, value.length - 1));
-                pipeTypes = gridPipeTypes[char];
-
-                for (var i = 0; i < n; i++) {
-                    string.push(pipeString.format(pipeTypes[random(pipeTypes.length)]));
-                }
-            }
+            string.push(pipeString.format(pipeTypes[random(pipeTypes.length)]));
         }
 
         string.push('</div>');
