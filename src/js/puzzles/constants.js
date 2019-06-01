@@ -219,7 +219,7 @@ var questions = [
 
     {   // question 19
         'q' : 'What is Esteban\'s favorite <span class="hint">smell</span>?',
-        'a' : ['Baby Ammens', 'A baby\'s one', 'Babies in general', 'Killing babies']
+        'a' : ['Baby Ammens', 'Poopoo', 'Babies in general', 'Baby\'s blood']
     },
 
     {   // question 20
@@ -257,7 +257,7 @@ var hints = [
     'Even if you are wrong, you are right.',                                    // question 3
     'Yes, she counts as a creature. I know.',                                   // question 4
     'May you repeat the question(8).',                                          // question 5
-    'One, two, or however many people as you would like :)',                    // question 6
+    'One, two, or however many people you would like :)',                       // question 6
     '"encrypted" is a strong word for this one :I',                             // question 7
     'For reals tho 🔥🔥🔥',                                                     // question 8
     'Real hint: this doesn\'t count past mistakes, like you being born :b',     // question 9
@@ -282,8 +282,8 @@ var wrongMsg = [
     ['Go check if you want >:c', 'That\'s where Esteban lives.', 'That\'s where you live :I'],                                      // question 0
     ['Happy 734.400 minutes <3', 'Oh sure, but you do know', 'It\'s not this one.'],                                                // question 1
     ['Actually true 🔥🔥', 'Wow, harsh.', 'Omg, no.'],                                                                              // question 2
-    ['Me as literally me? or as you?', 'He ded, me kils', 'No, well yes, but no.'],                                                 // question 3
-    ['Is Freddie = Daenerys', 'Well, no. She\'s not there. Kinda.', 'Sure.'],                                                       // question 4
+    ['Me as literally me? or as you?', 'He ded, me kils', 'No, well yes, but no (changes were made).'],                             // question 3
+    ['Is Freddie = Daenerys?', 'Well, no. She\'s not there. Kinda.', 'Sure.'],                                                       // question 4
     ['Malcom, is that u?', 'Yeah. "No" to you too.', 'I need answers bitch.'],                                                      // question 5
     ['Someone needs school.', 'Baudelaire???', 'Magenta and the CMYK-Men, he controls the metal inside ink 🔥'],                    // question 6
     ['Wrong, you hear me?', 'Miau', 'No idea what this is.'],                                                                       // question 7
@@ -298,7 +298,7 @@ var wrongMsg = [
     ['Not that much really.', 'OMG YES, but there is one better.', 'OH YES, but there is one better.'],                             // question 16
     ['', '', ''],                                                                                                                   // question 17
     ['', '', ''],                                                                                                                   // question 18
-    ['Not that I think about it...', 'Don\'t.', 'In the Sims maybe...'],                                                            // question 19
+    ['No 👶👶👶', 'Don\'t.', 'In the Sims maybe...'],                                                                              // question 19
     ['Black, like my soul :c', 'OF MY ENEMIES 🔥🔥', 'Why would you choose this one?'],                                             // question 20
     ['You will see.', 'I will leave you to your business, but don\'t touch me.', 'But then, how long is Minecraft?'],               // question 21
     ['Close, and weird.', 'No, I\'m not used to that one.', 'Too fancy.'],                                                          // question 22
