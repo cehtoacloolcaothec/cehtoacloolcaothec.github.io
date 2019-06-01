@@ -39,20 +39,6 @@ ul li {
     font-size: 2rem;
 }
 
-.cmd-o {
-    color: #961515;
-}
-
-.cmd-r {
-    color: #2d5972;
-    font-style: italic;
-}
-
-.cmd {
-    color:#3b7a46;
-    font-weight: 700;
-}
-
 hr {
     border-top: 1px solid rgb(255,255,255);
     min-width: 50rem;
@@ -74,6 +60,7 @@ hr {
     background-color: #313131;
     border: 1px solid #cfe3f727;
     border-radius: .50rem;
+    padding: .375rem .4rem;
 }
 
 .form-control:focus {
@@ -119,6 +106,18 @@ hr {
 
 .red-letter {
     color:  #ff6161;
+}
+
+.green-letter {
+    color:  #56e982;
+}
+
+.blue-letter {
+    color:  #5fc1fa;
+}
+
+.yellow-letter {
+    color:  #ffd45d;
 }
 
 .pipe-nm {

@@ -387,6 +387,12 @@ loadPipes();
 
 $('document').ready(function() {
     var systemsReady = [false, false, false, false, false]
+
+    $('#imageModal2').on('hidden.bs.modal', function (e) {
+        setTimeout(function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }, 500);
+    })
     
     // class="container pipe-system system-<n> size-<size>"
     $('.pipe-system').each(function() {
@@ -429,8 +435,10 @@ $('document').ready(function() {
                                         allCorrect = false;
                                 }
 
-                                if (allCorrect)
+                                if (allCorrect) {
                                     $('#imageModal2').modal('show');
+                                    $('.icon-next').removeAttr('style');
+                                }
                             } else {
                                 system.attr('class', systemClass.replace(/(?<=container )pipe-system-correct(?= system-\d)/g, 'pipe-system'));
                                 systemsReady[systemNumber - 1] = false;

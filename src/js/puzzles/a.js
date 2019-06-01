@@ -52,6 +52,12 @@ function doneTyping () {
 }
 
 $(document).ready(function() {
+    $('#imageModal1').on('hidden.bs.modal', function (e) {
+        setTimeout(function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }, 500);
+    })
+
     $('.form-control').each(function() {
         var inputForm = $(this);
         var id = inputForm.attr('id');

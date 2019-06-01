@@ -1,0 +1,157 @@
+@font-face {
+    font-family: pixel;
+    src: url('../fonts/bpdots.squares-bold.otf');
+}
+
+@keyframes squash {
+    from {
+        max-height: 100%;
+    } to {
+        max-height: 0%;
+    }
+}
+
+.modal-title.mistake {
+    font-family: "pixel", monospace;
+    font-size: 3rem;
+}
+
+.modal-body.mistake {
+    font-size: 2rem;
+    font-family: "pixel", monospace;
+}
+
+.collapsible.collapsed {
+    max-height: 0;
+    margin-bottom: 0 !important;
+}
+
+.collapsible {
+    height: auto;
+    overflow:hidden;
+    max-height: 500px;
+    transition:max-height 1.5s cubic-bezier(0.76, 0.05, 0.27, 0.99);;
+}
+
+.questions-tablet {
+    position: relative;
+    text-align: center;
+    color: #34373b;
+    margin-bottom: 5rem;
+}
+
+.question-number {
+    font-family: 'pixel', monospace !important;
+    font-size: 2.2rem;
+    color: #713939;
+    transform: translate(0%, -720%);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.33);
+
+    transition: 1.5s ease-in;
+}
+
+.question-content {
+    text-align: left;
+    position: absolute;
+    width: 720px;
+    height: 275px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    margin-top: .5rem;
+
+    font-family: 'pixel', monospace !important;
+}
+
+.question-text {
+    font-size: 1.5rem;
+    position: relative;
+
+    transition: 1s ease-in;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.33);
+}
+
+.option:hover {
+    color: #dadee4;
+    transform: translate(-2px, -2px);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.42);
+}
+
+.option {
+    position: absolute;
+    margin: 0;
+
+    line-height: 16px;
+    word-break: break-all;
+    inline-size: 215px;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+.option-0.nm {
+    bottom: 78px;
+    left: 10px;
+}
+.option-1.nm {
+    bottom: 25px;
+    left: 10px;
+}
+.option-2.nm {
+    bottom: 78px;
+    right: 10px;
+}
+.option-3.nm {
+    bottom: 25px;
+    right: 10px;
+}
+
+.option-0.lg {
+    bottom: 70px;
+    left: 10px;
+}
+.option-1.lg {
+    bottom: 15px;
+    left: 10px;
+}
+.option-2.lg {
+    bottom: 70px;
+    right: 10px;
+}
+.option-3.lg {
+    bottom: 15px;
+    right: 10px;
+}
+
+.hint {
+    text-decoration: underline;
+    cursor: help;
+}
+
+.hint:hover {
+    color: #ececec;
+}
+
+.start-btn {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.tooltip {
+    font-family: "pixel", monospace;
+    font-size: 1rem;
+}
+
+.tooltip-inner {
+    background-color: #000000bd;
+    border-radius: 0px;
+
+}
+
+.arrow {
+    display: none !important;
+}

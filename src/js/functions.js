@@ -40,3 +40,22 @@ function formatPreset(string) {
 
     return array;
 }
+
+function randSort(array) {
+    var newArray = [];
+    var used = [];
+    var index, tmpIndex;
+
+    for (var i = 0; i < array.length; i++)
+        used.push(i);
+    
+    for (var i = 0; i < array.length; i++) {
+        tmpIndex = random(used.length);
+        index = used[tmpIndex];
+        used.splice(tmpIndex, 1);
+
+        newArray.push(array[index]);
+    }
+
+    return newArray;
+}
