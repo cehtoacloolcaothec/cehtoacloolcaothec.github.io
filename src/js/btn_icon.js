@@ -1,8 +1,8 @@
 var icon_url = '../../src/icons/{0}/icon-{0}-{1}.svg';
 
 function redirect(url) {
-	window.location.assign('file:///C:/Users/tubi/Desktop/jos%C3%A9/' + url);
-	//window.location.assign('http://cehtoacloolcaothec.github.io/' + url);
+	//window.location.assign('file:///C:/Users/tubi/Desktop/jos%C3%A9/' + url);
+	window.location.assign('http://cehtoacloolcaothec.github.io/' + url);
 }
 
 function buttonPress(element) {
