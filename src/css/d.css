@@ -1,0 +1,70 @@
+@font-face {
+    font-family: pixel;
+    src: url('../fonts/bpdots.squares-bold.otf');
+}
+
+#chart {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.input-group.last-puzzle-input {
+    font-family: "pixel", monospace !important;
+    position: absolute !important;
+    width: 1128px;
+    margin-left: 32px;
+}
+
+.form-control.last-puzzle {
+    color: #e4e4e4;
+    background-color: #00000000;
+    border: 0px solid #00000000;
+    width: 142px;
+
+    margin-top: 1.75rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.form-control.last-puzzle:not(:last-child) {
+    color: #e4e4e4;
+    background-color: #00000000;
+    border: 0px solid #00000000;
+    width: 142px;
+
+    margin-right: 56px;
+    margin-top: 1.75rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.form-control.last-puzzle:focus {
+    box-shadow: none;
+}
+
+.input-elements {
+    margin-top: 87px;
+}
+
+.input-movies {
+    margin-top: calc(87px*2);
+}
+
+.input-cards {
+    margin-top: calc(87px*3);
+}
+
+.input-drugs {
+    margin-top: calc(87px*4);
+}
+
+.input-colors {
+    margin-top: calc(87px*5);
+}

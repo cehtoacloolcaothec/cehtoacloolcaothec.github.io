@@ -60,7 +60,6 @@ $(document).ready(function() {
 
     $('.form-control').each(function() {
         var inputForm = $(this);
-        var id = inputForm.attr('id');
 
         inputForm.on({
             'keydown' : function(event) {
@@ -68,10 +67,7 @@ $(document).ready(function() {
                 if (key > 36 && key < 41) // arrow keys
                     return;
 
-                clearTimeout(typingTimer);
-
-                if (inputForm.val())
-                    typingTimer = setTimeout(doneTyping, doneTypingInterval);
+                doneTyping();
             }
         });
     });

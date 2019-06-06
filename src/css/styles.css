@@ -6,6 +6,10 @@ body {
     font-family: 'Ubuntu Mono', monospace;
 }
 
+.iicon {
+    cursor: pointer;
+}
+
 .btn-link {
     color: #cccccc;
     text-decoration: none;
@@ -53,7 +57,7 @@ hr {
     display: inline-flex;
 }
 
-.form-control {
+.first-puzzle-input {
     color: #cecece;
     text-align: center;
     height: calc(1.5em + 2px);
@@ -63,7 +67,7 @@ hr {
     padding: .375rem .4rem;
 }
 
-.form-control:focus {
+.first-puzzle-input:focus {
     color: #cecece;
     background-color: #484848;
     border-color: #81d691a6;
@@ -117,7 +121,7 @@ hr {
 }
 
 .yellow-letter {
-    color:  #ffd45d;
+    color:  #ffc831;
 }
 
 .pipe-nm {
@@ -191,4 +195,8 @@ hr {
     margin-bottom: 5rem;
     border-color: white;
     transition: .5s ease-out;
+}
+
+.pipe:not(.empty) {
+    cursor: pointer;
 }
