@@ -51,21 +51,32 @@ function doneTyping(inputForm) {
     }, 300);
 }
 
-function toggleMark(li) {
-    if (li.attr('class') == 'hint-unmarked') {
-        li.attr('class', 'hint-marked');
+function toggleMark(li, markType) {
+    if (markType == 1) {
+        if (li.attr('class') == 'hint-unmarked') {
+            li.attr('class', 'hint-marked-0');
+        } else {
+            li.attr('class', 'hint-unmarked');
+        }
     } else {
-        li.attr('class', 'hint-unmarked');
+        if (li.attr('class') == 'hint-unmarked') {
+            li.attr('class', 'hint-marked-1');
+        } else {
+            li.attr('class', 'hint-unmarked');
+        }
     }
 }
 
 $('document').ready(function() {
-    $('.hint-marked, .hint-unmarked').each(function() {
+    $('.hint-marked-0, .hint-marked-1, .hint-unmarked').each(function() {
         var hint = $(this);
 
         hint.on({
-            'mouseup' : function() {
-                toggleMark(hint);
+            'mouseup' : function(event) {
+                var markType = event.which
+                if (markType == 1 || markType == 3)
+                    toggleMark(hint, markType);
+                }
             }
         });
     });
