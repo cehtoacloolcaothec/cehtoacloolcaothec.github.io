@@ -51,7 +51,25 @@ function doneTyping(inputForm) {
     }, 300);
 }
 
+function toggleMark(li) {
+    if (li.attr('class') == 'hint-unmarked') {
+        li.attr('class', 'hint-marked');
+    } else {
+        li.attr('class', 'hint-unmarked');
+    }
+}
+
 $('document').ready(function() {
+    $('.hint-marked, .hint-unmarked').each(function() {
+        var hint = $(this);
+
+        hint.on({
+            'mouseup' : function() {
+                toggleMark(hint);
+            }
+        });
+    });
+    
     $('.form-control.last-puzzle').each(function() {
         var inputForm = $(this);
 
