@@ -68,3 +68,16 @@
 .input-colors {
     margin-top: calc(87px*5);
 }
+
+.hint-marked {
+    font-style: italic;
+    color: #57aed1;
+    text-decoration: line-through;
+    transition: 2s ease-in;
+    cursor: pointer;
+}
+
+.hint-unmarked {
+    transition: 2s ease-out;
+    cursor: pointer;
+}
