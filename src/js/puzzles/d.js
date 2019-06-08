@@ -74,7 +74,7 @@ $('document').ready(function() {
         hint.on({
             'mouseup' : function(event) {
                 var markType = event.which
-                if (markType == 1 || markType == 3)
+                if (markType == 1 || markType == 3) {
                     toggleMark(hint, markType);
                 }
             }
