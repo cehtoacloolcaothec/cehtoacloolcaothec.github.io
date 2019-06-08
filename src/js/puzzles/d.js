@@ -70,6 +70,10 @@ function toggleMark(li, markType) {
 $('document').ready(function() {
     $('.hint-marked-0, .hint-marked-1, .hint-unmarked').each(function() {
         var hint = $(this);
+        
+        hint.bind("contextmenu", function(e) {
+		    e.preventDefault();
+	    });
 
         hint.on({
             'mouseup' : function(event) {
